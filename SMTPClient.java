@@ -6,6 +6,7 @@
  * Practical course "Introduction to Computer Networks"
  * Task 1: Implementation of a Simple SMTP Client
  *
+ * @author: Vitaliy Sobur <soburvit@tu-cottbus.de>
  * @author: Michael Vogel <mv@informatik.tu-cottbus.de>
  * @version: 2013-10-10
  *
