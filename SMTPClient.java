@@ -16,7 +16,6 @@
 
 import javax.swing.*;
 import javax.swing.text.*;
-import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.net.Socket;
@@ -24,6 +23,7 @@ import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("serial")
 public class SMTPClient extends JPanel implements ActionListener {
 
 	public final static String subject = "Cicero: \"De finibus bonorum et malorum\", 1.10.32";
@@ -147,15 +147,6 @@ public class SMTPClient extends JPanel implements ActionListener {
 			message = ((JTextComponent) inputComponents[InputField.MESSAGE
 					.ordinal()]).getText();
 			verbose = verboseBox.isSelected();
-
-			// --- test data
-/*			from = "soburvit@tu-cottbus.de";
-			to = "soburvit@tu-cottbus.de";
-			
-			bcc = "shumemar@tu-cottbus.de";
-			username = "soburvit";
-			password = "ma17slo";*/
-			// ---
 
 			sendMail(from, to, cc, bcc, username, password, subject, message, verbose);
 		}

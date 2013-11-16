@@ -2,6 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+@SuppressWarnings("serial")
 public class ModalDialog extends JDialog implements ActionListener {
   public ModalDialog(JFrame parent, String title, String message) {
     super(parent, title, true);
